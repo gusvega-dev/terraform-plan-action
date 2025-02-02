@@ -1,0 +1,22 @@
+name: "Terraform Plan Action"
+description: "A GitHub Action to automate Terraform Init & Plan in CI/CD pipelines"
+author: "Gus Vega"
+branding:
+  icon: "cloud"
+  color: "blue"
+
+inputs:
+  tf_version:
+    description: "Terraform version to use"
+    required: false
+    default: "1.5.6"
+
+outputs:
+  plan_status:
+    description: "Status of Terraform Plan execution"
+
+runs:
+  using: "docker"
+  image: "Dockerfile"
+  args:
+    - ${{ inputs.tf_version }}
