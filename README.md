@@ -1,14 +1,14 @@
-# Terraform Plan Action 🚀
+# Terraform Plan Action
 
 A GitHub Action to automate **Terraform Init & Plan** in CI/CD pipelines.  
-🚀 **Terraform Apply is available in the Pro version** → [Upgrade here](https://github.com/marketplace/terraform-apply-action)
+ **Terraform Apply is available in the Pro version** → [Upgrade here](https://github.com/marketplace/terraform-apply-action)
 
-## 🔧 Features
+## Features
 ✅ Terraform Init  
 ✅ Terraform Plan  
 ❌ Terraform Apply (*Available in the Pro version*)  
 
-## 🚀 Usage
+## Usage
 ```yaml
 name: "Terraform CI/CD"
 on:
