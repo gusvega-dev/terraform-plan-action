@@ -24,7 +24,7 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Terraform Plan
-        uses: gusvega-dev/terraform-plan-action@main
+        uses: gusvega-dev/terraform-plan-action@v1.0.1
         with:
           tf_version: "1.5.6"
           workdir: "terraform" 
