@@ -11,6 +11,11 @@ inputs:
     required: false
     default: "1.5.6"
 
+  workdir:
+    description: "Working directory where Terraform configuration files are located"
+    required: false
+    default: "."
+
 outputs:
   plan_status:
     description: "Status of Terraform Plan execution"
@@ -20,3 +25,4 @@ runs:
   image: "Dockerfile"
   args:
     - ${{ inputs.tf_version }}
+    - ${{ inputs.workdir }}
