@@ -27,3 +27,4 @@ jobs:
         uses: gusvega-dev/terraform-plan-action@main
         with:
           tf_version: "1.5.6"
+          workdir: "terraform" 
